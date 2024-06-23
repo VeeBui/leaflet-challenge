@@ -85,7 +85,9 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
 
         let popupString = `<h1>${title}</h1>
         <h3>Date: ${dateString}</h3>
-        <a href=${detail}>Details</a>
+        <h3>Location: (${circLocation[0]}°, ${circLocation[1]}°)</h3>
+        <h3>Magnitude: ${mag}</h3>
+        <h3>Depth: ${depth}</h3>
         `;
 
 
